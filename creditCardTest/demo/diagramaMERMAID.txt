@@ -1,0 +1,35 @@
+classDiagram
+    class CreditCard {
+        -cardNumber: String
+        -cardHolder: String
+        -expirationDate: Date
+        +CreditCard(cardNumber: String, cardHolder: String, expirationDate: Date)
+        +getCardNumber(): String
+        +getCardHolder(): String
+        +getExpirationDate(): Date
+        +setCardNumber(cardNumber: String): void
+        +setCardHolder(cardHolder: String): void
+        +setExpirationDate(expirationDate: Date): void
+        +isValid(): boolean
+        +toString(): String
+    }
+    class CreditCardTest {
+        +testGetCardNumber(): void
+        +testGetCardHolder(): void
+        +testGetExpirationDate(): void
+        +testSetCardNumber(): void
+        +testSetCardHolder(): void
+        +testSetExpirationDate(): void
+        +testIsValid(): void
+    }
+    class InvalidCardNumberException {
+        +InvalidCardNumberException(message: String)
+        +getMessage(): String
+    }
+    class InvalidCardHolderException {
+        +InvalidCardHolderException(message: String)
+        +getMessage(): String
+    }
+    CreditCard --> InvalidCardNumberException
+    CreditCard --> InvalidCardHolderException
+    CreditCardTest --> CreditCard
