@@ -1,20 +1,13 @@
+package com.example;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.lang.IllegalStateException;
 
-class InvalidTransactionException extends Exception {
-    public InvalidTransactionException(String message) {
-        super(message);
-    }
-}
 
-class InsufficientBalanceException extends Exception {
-    public InsufficientBalanceException(String message) {
-        super(message);
-    }
-}
 
-class CreditCard {
+public class CreditCard {
     private String cardNumber;
     private String cardHolderName;
     private LocalDate expirationDate;
@@ -57,60 +50,6 @@ class CreditCard {
         this.balance = balance;
     }
 
-    public void printMovements() {
-        for (String movement : movements) {
-            System.out.println(movement);
-        }
-    }
-
-    public void printTransactions() {
-        for (double transaction : transactions) {
-            System.out.println(transaction);
-        }
-    }
-
-    public void makeTransaction(double amount) throws InvalidTransactionException, InsufficientBalanceException {
-        if (amount <= 0) {
-            throw new InvalidTransactionException("Transaction amount must be positive");
-        }
-        if (balance < amount) {
-            throw new InsufficientBalanceException("Insufficient funds");
-        }
-        balance -= amount;
-        transactions.add(amount);
-        movements.add(String.format("Transaction: -%.2f", amount));
-    }
-
-    public void makePayment(double amount) throws InvalidTransactionException {
-        if (amount <= 0) {
-            throw new InvalidTransactionException("Payment amount must be positive");
-        }
-        balance += amount;
-        transactions.add(-amount);
-        movements.add(String.format("Payment: +%.2f", amount));
-    }
-
-    public void addFunds(double amount) throws InvalidTransactionException {
-        if (amount <= 0) {
-            throw new InvalidTransactionException("Amount must be positive");
-        }
-        balance += amount;
-        movements.add(String.format("Funds added: +%.2f", amount));
-    }
-
-    public boolean isExpired() {
-        LocalDate now = LocalDate.now();
-        return expirationDate.isBefore(now);
-    }
-    
-    public double getTransactionTotal() {
-        double total = 0;
-        for (double transaction : transactions) {
-            total += transaction;
-        }
-        return total;
-    }
-
     public String getCardNumber() {
         return cardNumber;
     }
@@ -137,5 +76,61 @@ class CreditCard {
 
     public List<String> getMovements() {
         return movements;
+    }
+
+
+
+    public void printMovements() {
+        for (String movement : movements) {
+            System.out.println(movement);
+        }
+    }
+
+    public void printTransactions() {
+        for (double transaction : transactions) {
+            System.out.println(transaction);
+        }
+    }
+
+    public void makeTransaction(double amount) {
+        if (amount <= 0) {
+            throw new IllegalStateException("Transaction amount must be positive");
+        }
+        if (balance < amount) {
+            throw new IllegalStateException("Insufficient funds");
+        }
+        balance -= amount;
+        transactions.add(amount);
+        movements.add(String.format("Transaction: -%.2f", amount));
+    }
+
+    public void makePayment(double amount) {
+        if (amount <= 0) {
+            throw new IllegalStateException("Payment amount must be positive");
+        }
+        balance += amount;
+        transactions.add(-amount);
+        movements.add(String.format("Payment: +%.2f", amount));
+    }
+
+    public void addFunds(double amount) {
+        if (amount <= 0) {
+            throw new IllegalStateException("Amount must be positive");
+        }
+        balance += amount;
+        movements.add(String.format("Funds added: +%.2f", amount));
+    }
+
+    public boolean isExpired() {
+        LocalDate now = LocalDate.now();
+        return expirationDate.isBefore(now);
+    }
+    
+    public double getTransactionTotal() {
+        double total = 0;
+        for (double transaction : transactions) {
+            total += transaction;
+        }
+        return total;
     }
 }
