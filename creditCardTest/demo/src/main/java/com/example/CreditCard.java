@@ -1,6 +1,5 @@
 package com.example;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.lang.IllegalStateException;
@@ -10,7 +9,7 @@ import java.lang.IllegalStateException;
 public class CreditCard {
     private String cardNumber;
     private String cardHolderName;
-    private LocalDate expirationDate;
+    private String expirationDate;
     private int cvv;
     private double balance;
     private List<Double> transactions = new ArrayList<>();
@@ -45,7 +44,7 @@ public class CreditCard {
 
         this.cardNumber = cardNumber;
         this.cardHolderName = cardHolderName;
-        this.expirationDate = LocalDate.parse(expirationDate);
+        this.expirationDate = (expirationDate);
         this.cvv = cvv;
         this.balance = balance;
     }
@@ -58,7 +57,7 @@ public class CreditCard {
         return cardHolderName;
     }
 
-    public LocalDate getExpirationDate() {
+    public String getExpirationDate() {
         return expirationDate;
     }
 
@@ -76,6 +75,14 @@ public class CreditCard {
 
     public List<String> getMovements() {
         return movements;
+    }
+
+    public double getTransactionTotal() {
+        double total = 0;
+        for (double transaction : transactions) {
+            total += transaction;
+        }
+        return total;
     }
 
 
@@ -120,17 +127,6 @@ public class CreditCard {
         balance += amount;
         movements.add(String.format("Funds added: +%.2f", amount));
     }
-
-    public boolean isExpired() {
-        LocalDate now = LocalDate.now();
-        return expirationDate.isBefore(now);
-    }
     
-    public double getTransactionTotal() {
-        double total = 0;
-        for (double transaction : transactions) {
-            total += transaction;
-        }
-        return total;
-    }
+    
 }

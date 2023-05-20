@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="demo.src.test.java.com.example.CreditCardTest" time="0.137" tests="14" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="c:\Users\viole\Documents\UNIVERSIDAD\DSS\ejercicios_DSS\creditCardTest\demo\target\test-classes;c:\Users\viole\Documents\UNIVERSIDAD\DSS\ejercicios_DSS\creditCardTest\demo\target\classes;C:\Users\viole\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\viole\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\viole\AppData\Local\Temp\surefire4688470286418322427\surefirebooter2328007860979404739.jar C:\Users\viole\AppData\Local\Temp\surefire4688470286418322427 2023-05-20T22-27-31_759-jvmRun1 surefire17035038429093082127tmp surefire_09309135455731113985tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="c:\Users\viole\Documents\UNIVERSIDAD\DSS\ejercicios_DSS\creditCardTest\demo\target\test-classes;c:\Users\viole\Documents\UNIVERSIDAD\DSS\ejercicios_DSS\creditCardTest\demo\target\classes;C:\Users\viole\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\viole\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\viole"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="c:\Users\viole\Documents\UNIVERSIDAD\DSS\ejercicios_DSS\creditCardTest\demo"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\viole\AppData\Local\Temp\surefire4688470286418322427\surefirebooter2328007860979404739.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.2+7-44"/>
+    <property name="user.name" value="viole"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\viole\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\viole\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="c:\Users\viole\Documents\UNIVERSIDAD\DSS\ejercicios_DSS\creditCardTest\demo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\sbt\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\bin;C:\Program Files (x86)\scala 2.13.10\bin;C:\Users\viole\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\viole\AppData\Local\Programs\Python\Python37\;C:\Users\viole\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;C:\Users\viole\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\viole\AppData\Local\gitkraken\bin;C:\Users\viole\AppData\Local\Microsoft\WindowsApps;C:\Users\viole\AppData\Local\Coursier\data\bin;C:\Program Files (x86)\Java;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\viole\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.2+7-44"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="testMakeTransactionWithNegativeAmount" classname="demo.src.test.java.com.example.CreditCardTest" time="0.009"/>
+  <testcase name="testAddFundsNegativeAmount" classname="demo.src.test.java.com.example.CreditCardTest" time="0.001"/>
+  <testcase name="testGetTransactions" classname="demo.src.test.java.com.example.CreditCardTest" time="0"/>
+  <testcase name="testAddFunds" classname="demo.src.test.java.com.example.CreditCardTest" time="0.003"/>
+  <testcase name="testGetCardHolderName" classname="demo.src.test.java.com.example.CreditCardTest" time="0.002"/>
+  <testcase name="testMakePayment" classname="demo.src.test.java.com.example.CreditCardTest" time="0.001"/>
+  <testcase name="testGetBalance" classname="demo.src.test.java.com.example.CreditCardTest" time="0.001"/>
+  <testcase name="testMakeTransactionWithInsufficientFunds" classname="demo.src.test.java.com.example.CreditCardTest" time="0.001"/>
+  <testcase name="testGetExpirationDate" classname="demo.src.test.java.com.example.CreditCardTest" time="0"/>
+  <testcase name="testGetCvv" classname="demo.src.test.java.com.example.CreditCardTest" time="0"/>
+  <testcase name="testMakePaymentWithNegativeAmount" classname="demo.src.test.java.com.example.CreditCardTest" time="0.001"/>
+  <testcase name="testMakeTransaction" classname="demo.src.test.java.com.example.CreditCardTest" time="0.001"/>
+  <testcase name="testGetMovements" classname="demo.src.test.java.com.example.CreditCardTest" time="0.001"/>
+  <testcase name="testGetCardNumber" classname="demo.src.test.java.com.example.CreditCardTest" time="0.001"/>
+</testsuite>
